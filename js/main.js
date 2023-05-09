@@ -8,7 +8,7 @@ const provideRandomInt = function (bottom, top) {
   }
 
   return Math.floor(Math.random() * (top - bottom) + bottom);
-}
+};
 
 const checkMaxLength = function (string, maximumLength) {
   if (string.length <= maximumLength) {
@@ -16,7 +16,7 @@ const checkMaxLength = function (string, maximumLength) {
   }
 
   return false;
-}
+};
 
 provideRandomInt(0, 9);
-checkMaxLength('cat', 5)
+checkMaxLength('cat', 5);
