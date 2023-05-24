@@ -26,7 +26,7 @@ function generatePhotos() {
   const arrayOfData = [];
   for (let i = 1; i <= 25; i++) {
     const id = i;
-    const url = 'photos/${i}.jpg';
+    const url = 'photo/${i}.jpg';;
     const description = 'Какой прекрасный закат!';
     const likes = provideRandomInt(15, 200);
     const comments = provideRandomInt(0, 200);
@@ -39,6 +39,6 @@ function generatePhotos() {
     };
     arrayOfData[i - 1] = photos;
   }
-};
+}
 
 generatePhotos(15);
