@@ -1,2 +1,3 @@
 import { generatePhotos } from './data.js';
-generatePhotos(15);
+import { drawPicture } from './drawMe.js';
+drawPicture(generatePhotos(25));
