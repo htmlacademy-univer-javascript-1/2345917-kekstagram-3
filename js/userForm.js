@@ -37,5 +37,5 @@ function closeWindow() {
   makeEdit.classList.add('hidden');
   document.body.classList.remove('modal-open');
   document.removeEventListener('keydown', closeEscapeKeydown);
-  cleanForm();
+  clearUserForm();
 }
