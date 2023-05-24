@@ -1,7 +1,7 @@
 const picturePattern = document.querySelector('#picture');
 const block = document.querySelector('.pictures');
 
-const drawPicture = (elements) => {
+export const drawPicture = (elements) => {
   const pictureFragment = document.createDocumentFragment();
   elements.forEach((element) => {
     const pattern = picturePattern.cloneNode(true).content;
@@ -18,3 +18,5 @@ const drawPicture = (elements) => {
 
   block.appendChild(pictureFragment);
 };
+
+drawPicture(elements);
