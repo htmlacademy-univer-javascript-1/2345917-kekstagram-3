@@ -8,7 +8,7 @@ export function provideRandomInt (bottom, top) {
   }
 
   return Math.floor(Math.random() * (top - bottom) + bottom);
-};
+}
 
 export function checkMaxLength(string, maximumLength) {
   if (string.length <= maximumLength) {
@@ -16,4 +16,4 @@ export function checkMaxLength(string, maximumLength) {
   }
 
   return false;
-};
+}
