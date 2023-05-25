@@ -5,14 +5,14 @@ const sliderValue = document.querySelector('.effect-level__value');
 
 export function clearEffects() {
   sliderStatus.classList.add('visually-hidden');
-  for (const className of picture.classList) {
+  for (const className of updateEffectPicture.classList) {
     if (className.startsWith('effects__preview--')) {
       updateEffectPicture.classList.remove(className);
     }
   }
 }
 
-noUiSlider.create(sliderElement, {
+noUiSlider.create(sliderStatus, {
   connect: 'lower',
   startPoint: 100,
   section: {

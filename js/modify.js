@@ -24,9 +24,9 @@ sizeBigger.addEventListener('click', () => {
   let updateData = actualData + 25;
   if (updateData > 100) {
     updateData = 100;
-  };
+  }
   sliderStatus.noUiSlider.set(100);
-  changeSize(newValueupdateData);
+  changeSize(updateData);
 });
 
 sizeSmaller.addEventListener('click', () => {
@@ -34,9 +34,9 @@ sizeSmaller.addEventListener('click', () => {
   let updateData = actualData - 25;
   if (updateData < 25) {
     updateData = 25;
-  };
-  sliderElement.noUiSlider.set(100);
-  sliderStatus(updateData);
+  }
+  sliderStatus.noUiSlider.set(100);
+  changeSize(updateData);
 });
 
 //Изменение фильтра изображения
@@ -52,7 +52,7 @@ function changeEffectPicture(evt) {
       updateEffectPicture.classList.remove(className);
     }
   }
-  picture.classList.add(`effects__preview--${evt.target.value}`);
+  updateEffectPicture.classList.add(`effects__preview--${evt.target.value}`);
   updateScale();
   installSlider(evt.target.value);
 }
