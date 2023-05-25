@@ -1,3 +1,6 @@
+import { clearEffects } from './slider.js';
+import { updateScale } from './modify.js';
+
 const uploadFile = document.querySelector('#upload-file');
 const closeUploadFile = document.querySelector('#upload-cancel');
 const makeEdit = document.querySelector('.img-upload__overlay');
@@ -37,5 +40,7 @@ function closeWindow() {
   makeEdit.classList.add('hidden');
   document.body.classList.remove('modal-open');
   document.removeEventListener('keydown', closeEscapeKeydown);
+  clearEffects();
   clearUserForm();
+  updateScale();
 }
