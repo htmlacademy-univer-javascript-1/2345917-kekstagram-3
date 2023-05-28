@@ -19,4 +19,3 @@ export const drawPicture = (elements) => {
   block.appendChild(pictureFragment);
 };
 
-drawPicture();
