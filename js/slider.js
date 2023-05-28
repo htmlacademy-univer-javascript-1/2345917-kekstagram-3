@@ -14,8 +14,8 @@ export function clearEffects() {
 
 noUiSlider.create(sliderStatus, {
   connect: 'lower',
-  startPoint: 100,
-  section: {
+  start: 100,
+  range: {
     min: 0,
     max: 100,
   },
@@ -50,8 +50,8 @@ export function installSlider(param) {
   if (param === 'chrome') {
     sliderStatus.classList.remove('visually-hidden');
     sliderStatus.noUiSlider.updateOptions({
-      startPoint: 1,
-      section: {
+      start: 1,
+      range: {
         min: 0,
         max: 1
       },
@@ -62,8 +62,8 @@ export function installSlider(param) {
   if (param === 'sepia') {
     sliderStatus.classList.remove('visually-hidden');
     sliderStatus.noUiSlider.updateOptions({
-      startPoint: 1,
-      section: {
+      start: 1,
+      range: {
         min: 0,
         max: 1
       },
@@ -74,8 +74,8 @@ export function installSlider(param) {
   if (param === 'marvin') {
     sliderStatus.classList.remove('visually-hidden');
     sliderStatus.noUiSlider.updateOptions({
-      startPoint: 100,
-      section: {
+      start: 100,
+      range: {
         min: 0,
         max: 100
       },
@@ -85,8 +85,8 @@ export function installSlider(param) {
   if (param === 'phobos') {
     sliderStatus.classList.remove('visually-hidden');
     sliderStatus.noUiSlider.updateOptions({
-      startPoint: 3,
-      section: {
+      start: 3,
+      range: {
         min: 0,
         max: 3
       },
@@ -97,8 +97,8 @@ export function installSlider(param) {
   if (param === 'heat') {
     sliderStatus.classList.remove('visually-hidden');
     sliderStatus.noUiSlider.updateOptions({
-      startPoint: 3,
-      section: {
+      start: 3,
+      range: {
         min: 1,
         max: 3
       },

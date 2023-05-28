@@ -1,8 +1,11 @@
-import { generatePhotos } from './data.js';
+import { getPhotos } from './data.js';
+import { letErrorUploadPicture } from './errorMessage.js';
 import { drawPicture } from './drawMe.js';
-import './validation.js';
 import './userForm.js';
+import './validation.js';
+import './modify.js';
+import './slider.js';
 
-drawPicture(generatePhotos(25));
+getPhotos(drawPicture, letErrorUploadPicture);
 
 //Задание 7 часть 2
