@@ -31,7 +31,7 @@ function clearUserForm() {
   hashtag.value = '';
   comment.value = '';
   clearEffects();
-  updateScale()
+  updateScale();
 }
 
 uploadFile.addEventListener('change', (evt) => {
